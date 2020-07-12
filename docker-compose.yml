@@ -10,4 +10,3 @@ services:
       - NODE_ENV=production
     expose:
       - "5050"
-    command: "sonos-web start"
