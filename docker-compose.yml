@@ -8,5 +8,3 @@ services:
     build: .
     environment:
       - NODE_ENV=production
-    expose:
-      - "5050"
