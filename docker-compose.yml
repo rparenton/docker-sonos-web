@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  node:
+    container_name: sonos-web
+    user: node
+    working_dir: /home/node/app
+    network_mode: host
+    build: .
+    environment:
+      - NODE_ENV=production
+    expose:
+      - "5050"
+    command: "sonos-web start"
